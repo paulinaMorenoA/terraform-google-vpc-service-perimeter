@@ -20,12 +20,12 @@ terraform {
 
     google = {
       source  = "hashicorp/google"
-      version = "~> 3.82"
+      version = ">= 3.50, < 5.0"
     }
   }
 
   provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-vpc-service-controls:regular_service_perimeter/v3.1.0"
+    module_name = "blueprints/terraform/terraform-google-vpc-service-controls:regular_service_perimeter/v4.0.1"
   }
 
 }
